@@ -1,8 +1,7 @@
-# Dot to Drawio
+from converter import Config
+from converter import Converter
 
-Example usage:
 
-```py
 config = Config(3.0, 100.0)
 
 dot_string = """
@@ -14,9 +13,3 @@ graph graphname {
 
 result = Converter(config).convert(dot_string)
 print(result)
-```
-
-Authors:
-- Jacek Gołębiowski
-- Kamil Kochańczyk
-- Mikołaj Radkowski
